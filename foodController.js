@@ -30,7 +30,7 @@ exports.createNewFood = async (req, res)=>{
 exports.getFood = async (req, res)=>{
     const food = await Food.findById(req.params.id)
     if(!food){
-        return new AppError('No tour found with that ID', 400)}
+        return new AppError('No food found with that ID', 400)}
     res.status(200).json({
         status: 'success',
         data: {
