@@ -23,6 +23,10 @@ const foodSchema = new mongoose.Schema({
     direction8: String,
     direction9: String,
     direction10: String,
+    direction11: String,
+    direction12: String,
+    direction13: String,
+
 })
 
 const Food = mongoose.model('Food', foodSchema);
